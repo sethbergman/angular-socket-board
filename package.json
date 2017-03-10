@@ -9,7 +9,7 @@
   },
   "subdomain": "angular-socket-board",
   "scripts": {
-    "start": "app.js"
+    "start": "node app.js"
   },
   "engines": {
     "node": "0.8.x"

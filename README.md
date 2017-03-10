@@ -1,6 +1,8 @@
 AngularJS Collab Board
 ======================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sethbergman/angular-socket-board.svg)](https://greenkeeper.io/)
+
 A real-time collaboration board using AngularJS and Socket.io.
 
 ## How to use angularjs-collab-board

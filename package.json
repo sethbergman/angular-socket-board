@@ -1,5 +1,5 @@
 {
-  "name": "angular-collab-board",
+  "name": "angular-socket-board",
   "description": "AngularJS Collobaration Board",
   "version": "0.0.1-1",
   "private": true,
@@ -7,7 +7,7 @@
     "express": "3.x",
     "socket.io": "0.9.x"
   },
-  "subdomain": "simpulton.angularjs-collab-board",
+  "subdomain": "angular-socket-board",
   "scripts": {
     "start": "app.js"
   },

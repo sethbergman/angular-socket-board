@@ -23,8 +23,8 @@ app.directive('stickyNote', function(socket) {
 			});
 
 			// Some DOM initiation to make it nice
-			element.css('left', '10px');
-			element.css('top', '50px');
+			//element.css('left', '10px');
+			//element.css('top', '50px');
 			element.hide().fadeIn();
 		};
 
@@ -35,7 +35,7 @@ app.directive('stickyNote', function(socket) {
 				if(data.id == $scope.note.id) {
 					$scope.note.title = data.title;
 					$scope.note.body = data.body;
-				}				
+				}
 			});
 
 			// Outgoing

@@ -3,9 +3,9 @@ var express = require('express'),
 	server = require('http').createServer(app),
 	io = require('socket.io').listen(server);
 
-app.configure(function() {
-    app.use(express.static(__dirname + '/public'));
-});
+
+app.use(express.static(__dirname + '/public'));
+
 
 io.sockets.on('connection', function(socket) {
 	socket.on('createNote', function(data) {
@@ -25,4 +25,9 @@ io.sockets.on('connection', function(socket) {
 	});
 });
 
-server.listen(1337);
+server.listen(1337, function () {
+	console.log('Server running at http://0.0.0.0:' + server.address().port)
+});
+// app.listen(process.env.PORT || 1337, function () {
+//   console.log('Server running at http://0.0.0.0:' + server.address().port)
+// })

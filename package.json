@@ -4,14 +4,18 @@
   "version": "0.0.1-1",
   "private": true,
   "dependencies": {
-    "express": "3.x",
-    "socket.io": "0.9.x"
+    "express": "4.16.0",
+    "socket.io": "0.9.x",
+    "snyk": "^1.41.1"
   },
   "subdomain": "angular-socket-board",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engines": {
     "node": "0.8.x"
-  }
+  },
+  "snyk": true
 }
